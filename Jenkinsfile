@@ -5,7 +5,7 @@ pipeline {
             steps{
                 sh 'mvn clean package'
                 sh 'docker build . -t miracleclient'
-                sh 'docker run -d miracleclient'
+                sh 'docker run -i -t miracleclient'
             }
         }
     }
