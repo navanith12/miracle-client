@@ -5,7 +5,7 @@ pipeline {
             steps{
                 sh 'mvn --version'    
                 sh 'mvn clean package'
-                sh 'sudo su azureuser -p "Welcome@2468"' 
+                sh 'sudo su azureuser' 
                 //sh 'newgrp docker -p ""'
                 sh 'docker images'
                 sh 'docker build . -t miracleclient'
