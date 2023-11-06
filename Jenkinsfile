@@ -9,7 +9,8 @@ pipeline {
                 // sh 'newgrp docker'
                 sh 'docker images'
                 sh 'docker build . -t miracleclient'
-                sh 'docker run -i -t miracleclient'
+                sh 'docker images'
+                sh 'docker run -t miracleclient'
             }
         }
     }
